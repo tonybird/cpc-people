@@ -62,7 +62,7 @@ class MySettingsPage
 
         add_settings_field(
             'table',
-            'Table',
+            'Database Name',
             array( $this, 'table_callback' ),
             'cpc-setting-admin',
             'db_options'

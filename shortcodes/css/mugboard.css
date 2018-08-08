@@ -1,0 +1,18 @@
+.mugboard-entry {
+  width: 200px;
+  padding: 10px;
+}
+.mugboard-entry p {
+  margin-top: 10px;
+}
+.mugboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.searchrow {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+}
