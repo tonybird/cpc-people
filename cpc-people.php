@@ -13,7 +13,7 @@
 
    include( plugin_dir_path( __FILE__ ) . 'options-menu.php');
    $opts = get_option( 'cpc_people_options' );
-   $projectsdb = new wpdb($opts['username'], $opts['password'], $opts['table'], $opts['hostname']);
+   $peopledb = new wpdb($opts['username'], $opts['password'], $opts['table'], $opts['hostname']);
 
    include( plugin_dir_path( __FILE__ ) . 'widgets/faces-widget.php');
    include( plugin_dir_path( __FILE__ ) . 'widgets/greetings-widget.php');
@@ -23,5 +23,8 @@
    //Datatables demo shortcodes
    include( plugin_dir_path( __FILE__ ) . 'shortcodes/mugboard-dt.php');
    include( plugin_dir_path( __FILE__ ) . 'shortcodes/searchable-dt.php');
+
+
+   include( plugin_dir_path( __FILE__ ) . 'shortcodes/new-db-test.php');
 
 ?>

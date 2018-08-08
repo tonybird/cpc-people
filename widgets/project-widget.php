@@ -17,11 +17,13 @@ public function widget( $args, $instance ) {
 $title = apply_filters( 'widget_title', $instance['title'] );
 
 echo $args['before_widget'];
+
+echo "<div class='project-widget'>";
 if ( ! empty( $title ) )
 echo $args['before_title'] . $title . $args['after_title'];
 
-global $projectsdb;
-$randproj = $projectsdb->get_results( "SELECT title, pi, url, image FROM projects ORDER BY RAND() LIMIT 1" );
+global $peopledb;
+$randproj = $peopledb->get_results( "SELECT title, pi, url, image FROM projects ORDER BY RAND() LIMIT 1" );
 
 foreach ($randproj as $proj) {
   echo "<img src='http://devweb11.cpc.unc.edu/images/$proj->image' width='100px' class='alignleft' style='margin-right: 10px;'>";
@@ -29,6 +31,7 @@ foreach ($randproj as $proj) {
   echo "<p><i>$proj->pi</i></p>";
 }
 
+echo "</div>";
 echo $args['after_widget'];
 }
 

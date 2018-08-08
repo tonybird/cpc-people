@@ -2,8 +2,8 @@
 
 function display_mugboard_dt($atts) {
 
- global $projectsdb;
- $allprojects = $projectsdb->get_results("SELECT title, pi, url, image FROM projects");
+ global $peopledb;
+ $allprojects = $peopledb->get_results("SELECT title, pi, url, image FROM projects");
 
  echo "<table id='projects' class='table'>
         <thead>

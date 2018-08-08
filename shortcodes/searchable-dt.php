@@ -1,8 +1,8 @@
 <?php
 //https://www.jqueryscript.net/table/Inline-Table-Editing-jQuery-Tabledit.html
 function display_searchable_dt($atts) {
- global $projectsdb;
- $wpproj= $projectsdb->get_results("SELECT title, pi, url, image FROM wpprojects");
+ global $peopledb;
+ $wpproj= $peopledb->get_results("SELECT title, pi, url, image FROM wpprojects");
 
  echo "<link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/v/bs4/jq-3.2.1/dt-1.10.16/datatables.min.css'/>
 
