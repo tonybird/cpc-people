@@ -17,14 +17,11 @@
 
    include( plugin_dir_path( __FILE__ ) . 'widgets/faces-widget.php');
    include( plugin_dir_path( __FILE__ ) . 'widgets/greetings-widget.php');
-   include( plugin_dir_path( __FILE__ ) . 'widgets/project-widget.php');
 
    include( plugin_dir_path( __FILE__ ) . 'shortcodes/mugboard.php');
+
    //Datatables demo shortcodes
-   include( plugin_dir_path( __FILE__ ) . 'shortcodes/mugboard-dt.php');
-   include( plugin_dir_path( __FILE__ ) . 'shortcodes/searchable-dt.php');
-
-
-   include( plugin_dir_path( __FILE__ ) . 'shortcodes/new-db-test.php');
+   // include( plugin_dir_path( __FILE__ ) . 'shortcodes/mugboard-dt.php');
+   // include( plugin_dir_path( __FILE__ ) . 'shortcodes/searchable-dt.php');
 
 ?>
